@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML JavaScript output on same page</title>
+    <script type="text/JavaScript">
+    const samsung = [];
+    samsung[0]= "5000 Mah";
+    samsung[1]= "6.7 Inch";
+    samsung[2]= "16gb RAM";
+    samsung[3]= "S21ultra.jpg";
+
+    function showMessage(){
+            var phone = document.getElementById("phone").value;
+            display_message.innerHTML= phone;
+            var fruit = getRandomItem(samsung);
+    // boldStuffs[i].innerHTML 
+            document.getElementById("size").innerHTML = '<img src="'+samsung[3]+'">';
+    }
+    //  = samsung[1];
+
+    // const iphone = [];
+    // iphone[0]= "3000 Mah";
+    // iphone[1]= "6.5 Inch";
+    // iphone[2]= "6gb RAM";
+    //     function showMessage(){
+    //         var phone = document.getElementById("phone").value;
+    //         display_message.innerHTML= phone;
+            
+    //         if(phone == "Galaxy S21 Ultra"){
+    //         document.getElementById("battery").innerHTML = samsung[0];
+    //         document.getElementById("size").innerHTML = samsung[1];
+    //         document.getElementById("RAM").innerHTML = samsung[2];
+    //         } else if(phone == "Iphone 12 pro max"){
+    //             document.getElementById("battery").innerHTML = iphone[0];
+    //             document.getElementById("size").innerHTML = iphone[1];
+    //             document.getElementById("RAM").innerHTML = iphone[2];
+    //         }
+
+    //         var phone2 = document.getElementById("phone2").value;
+    //         display_text.innerHTML= phone2;
+            
+    //         if(phone2 == "Galaxy S21 Ultra"){
+    //         document.getElementById("battery1").innerHTML = samsung[0];
+    //         document.getElementById("size1").innerHTML = samsung[1];
+    //         document.getElementById("RAM1").innerHTML = samsung[2];
+    //         } else if(phone2 == "Iphone 12 pro max"){
+    //             document.getElementById("battery1").innerHTML = iphone[0];
+    //             document.getElementById("size1").innerHTML = iphone[1];
+    //             document.getElementById("RAM1").innerHTML = iphone[2];
+    //         }
+    //     }
+
+        // function showPhone(){
+        //     var phone = document.getElementById("phone").value;
+        //     display_text.innerHTML= phone;
+            
+        //     if(phone == "Galaxy S21 Ultra"){
+        //     document.getElementById("battery1").innerHTML = samsung[0];
+        //     document.getElementById("size1").innerHTML = samsung[1];
+        //     document.getElementById("RAM1").innerHTML = samsung[2];
+        //     } else if(phone == "Iphone 12 pro max"){
+        //         document.getElementById("battery1").innerHTML = iphone[0];
+        //         document.getElementById("size1").innerHTML = iphone[1];
+        //         document.getElementById("RAM1").innerHTML = iphone[2];
+        //     }
+        // }
+    </script>
+</head>
+<body>
+<form>
+	<label>CHOOSE PHONE</label>  
+		<select name="first" id = "phone" class="form-control">
+		    <option value="Galaxy S21 Ultra" selected="selected">Galaxy S21 Ultra</option>
+			<option value="Iphone 12 pro max" selected='selected'>Iphone 12 pro max</option>
+		</select>
+<!-- <input type="text" id = "message"> -->
+<!-- <input type="button" onclick="showMessage()" value="submit" /> -->
+</form>
+ <p> Message is: <span id = "display_message"></span> </p>
+<!-- <p> battery is: <span id = "battery"></span> </p> -->
+<p> size is: <span id = "size"></span> </p>
+<!-- <p> RAM is: <span id = "RAM"></span> </p> -->
+
+
+<!-- <br><br>
+<label>CHOOSE PHONE</label>  
+<select name="first" id = "phone2" class="form-control">
+    <option value="Galaxy S21 Ultra" selected="selected">Galaxy S21 Ultra</option>
+    <option value="Iphone 12 pro max" selected='selected'>Iphone 12 pro max</option>
+</select>
+</form> -->
+<!-- <p> Message is: <span id = "display_text"></span> </p>
+<p> battery is: <span id = "battery1"></span> </p>
+<p> size is: <span id = "size1"></span> </p>
+<p> RAM is: <span id = "RAM1"></span> </p>
+<br> -->
+<input type="button" onclick="showMessage()" value="submit" />
+</body>
+</html>
